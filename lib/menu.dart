@@ -28,14 +28,6 @@ class _MenuState extends State<Menu> {
         ),
         backgroundColor: Colors.white,
         elevation: 0.0,
-        actions: [
-          IconButton(
-              color: Colors.black,
-              icon: Icon(Icons.search),
-              onPressed: () {
-                Navigator.pushNamed(context, '/search');
-              }),
-        ],
       ),
       body: Center(
         child: Text('Menu'),

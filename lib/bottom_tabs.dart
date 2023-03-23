@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'home.dart';
-import 'menu.dart';
+import 'side_menu.dart';
 import 'settings.dart';
 
 class TabNavigationItem {
@@ -14,7 +14,7 @@ class TabNavigationItem {
 
   static List<TabNavigationItem> get items => [
         TabNavigationItem(
-          page: Menu(),
+          page: SideMenu(),
           icon: Icon(Icons.menu),
           title: Text("Menu"),
         ),

@@ -14,17 +14,25 @@ class _SideMenuState extends State<SideMenu> {
         padding: EdgeInsets.zero,
         children: [
           DrawerHeader(
-            child: Text(
-              'Discover Sri Lanka',
-              style: TextStyle(color: Colors.white, fontSize: 25),
-            ),
+            child: Container(
+                color: Colors.black.withOpacity(0.5),
+                child: Text(
+                  'Actions',
+                  style: TextStyle(
+                    fontSize: 30,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white,
+                  ),
+                )),
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.only(
                     bottomLeft: Radius.circular(10.0),
                     bottomRight: Radius.circular(10.0)),
                 color: Colors.white,
                 image: DecorationImage(
-                    fit: BoxFit.fill, image: AssetImage('g4t.jpg'))),
+                    fit: BoxFit.fill,
+                    image: NetworkImage(
+                        'https://fjwp.s3.amazonaws.com/blog/wp-content/uploads/2020/10/15153848/The-Career-Benefits-of-Volunteering-During-Your-Job-Search-2.jpg'))),
           ),
           ListTile(
             leading: Icon(Icons.credit_card),
@@ -73,6 +81,17 @@ class _SideMenuState extends State<SideMenu> {
           ListTile(
             leading: Icon(Icons.today),
             title: Text('Upcoming'),
+            onTap: () => {
+              Navigator.pushReplacement(
+                context,
+                MaterialPageRoute(
+                    builder: (context) => TabsPage(selectedIndex: 2)),
+              ),
+            },
+          ),
+          ListTile(
+            leading: Icon(Icons.logout),
+            title: Text('Signout'),
             onTap: () => {
               Navigator.pushReplacement(
                 context,
