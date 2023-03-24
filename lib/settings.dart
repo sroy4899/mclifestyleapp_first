@@ -11,7 +11,7 @@ class _SettingsState extends State<Settings> {
   @override
   Widget build(BuildContext context) {
     return Container(
-        color: Colors.orange[400],
+        color: Colors.orange[500],
         child: ListView(
           padding: EdgeInsets.only(top: 75),
           children: [
