@@ -1,24 +1,10 @@
-# hello_world
+# Mastercard Lifestyle App
 
-A new Flutter project created with https://flutlab.io
+A project created in flutter for a simple mockup of the Mastercard Lifestyle app.  
+This app encourages grassroots activism by rewarding cardholders for day-to-day activism in volunteering, 
+donating, and attending cultural events.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- https://flutter.dev/docs/get-started/codelab
-- https://flutter.dev/docs/cookbook
-
-For help getting started with Flutter, view our
-https://flutter.dev/docs, which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-
-## Getting Started: FlutLab - Flutter Online IDE
-
-- How to use FlutLab? Please, view our https://flutlab.io/docs
-- Discover a marketplace of ready-to-use Flutter projects https://flutlab.io/widgetbay
-- Join the discussion and conversation on https://flutlab.io/residents
-
-If you have some questions regarding FlutLab, you can ask on https://flutlab.io/faq
+You can port this into any online Flutter IDE like flutlab.io to see this in action!
+For any questions reach out to the Lifestyle App team!
