@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'tabspage.dart';
 
-class SideMenu extends StatefulWidget {
+class SideMenuRight extends StatefulWidget {
   @override
-  _SideMenuState createState() => _SideMenuState();
+  _SideMenuRightState createState() => _SideMenuRightState();
 }
 
-class _SideMenuState extends State<SideMenu> {
+class _SideMenuRightState extends State<SideMenuRight> {
   @override
   Widget build(BuildContext context) {
     return Drawer(
@@ -15,8 +15,15 @@ class _SideMenuState extends State<SideMenu> {
         children: [
           DrawerHeader(
             child: Container(
-              color: Colors.black.withOpacity(0),
-            ),
+                color: Colors.black.withOpacity(0.5),
+                child: Text(
+                  'Actions',
+                  style: TextStyle(
+                    fontSize: 30,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white,
+                  ),
+                )),
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.only(
                     bottomLeft: Radius.circular(10.0),
@@ -27,8 +34,6 @@ class _SideMenuState extends State<SideMenu> {
                     image: NetworkImage(
                         'https://fjwp.s3.amazonaws.com/blog/wp-content/uploads/2020/10/15153848/The-Career-Benefits-of-Volunteering-During-Your-Job-Search-2.jpg'))),
           ),
-          Container(
-            color: Colors.orange[100]
           ListTile(
             leading: Icon(Icons.credit_card),
             title: Text('Add your Mastercard'),
@@ -39,7 +44,7 @@ class _SideMenuState extends State<SideMenu> {
                     builder: (context) => TabsPage(selectedIndex: 0)),
               )
             },
-          )),
+          ),
           ListTile(
             leading: Icon(Icons.account_balance_wallet),
             title: Text('Link MC Pay'),

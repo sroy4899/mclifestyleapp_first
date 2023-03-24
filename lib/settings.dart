@@ -11,9 +11,9 @@ class _SettingsState extends State<Settings> {
   @override
   Widget build(BuildContext context) {
     return Container(
-        color: Colors.grey.withOpacity(.5),
+        color: Colors.orange[400],
         child: ListView(
-          padding: EdgeInsets.zero,
+          padding: EdgeInsets.only(top: 75),
           children: [
             DrawerHeader(
               child: Column(
@@ -34,8 +34,7 @@ class _SettingsState extends State<Settings> {
                       'My Profile',
                       style: TextStyle(
                         fontSize: 12,
-                        fontWeight: FontWeight.bold,
-                        color: Colors.black,
+                        color: Colors.white,
                       ),
                     ),
                   )
@@ -43,8 +42,10 @@ class _SettingsState extends State<Settings> {
               ),
             ),
             ListTile(
-              leading: Icon(Icons.manage_accounts),
-              title: Text('Manage accounts - parental controls'),
+              leading:
+                  Icon(Icons.manage_accounts, size: 30, color: Colors.white),
+              title: Text('Manage accounts - parental controls',
+                  style: TextStyle(color: Colors.white)),
               onTap: () => {
                 Navigator.pushReplacement(
                   context,
@@ -54,8 +55,9 @@ class _SettingsState extends State<Settings> {
               },
             ),
             ListTile(
-              leading: Icon(Icons.accessibility),
-              title: Text('Accessibility Features'),
+              leading: Icon(Icons.accessibility, size: 30, color: Colors.white),
+              title: Text('Accessibility Features',
+                  style: TextStyle(color: Colors.white)),
               onTap: () => {
                 Navigator.pushReplacement(
                   context,
@@ -65,8 +67,9 @@ class _SettingsState extends State<Settings> {
               },
             ),
             ListTile(
-              leading: Icon(Icons.history),
-              title: Text('See my history'),
+              leading: Icon(Icons.history, size: 30, color: Colors.white),
+              title:
+                  Text('See my history', style: TextStyle(color: Colors.white)),
               onTap: () => {
                 Navigator.pushReplacement(
                   context,
@@ -76,8 +79,10 @@ class _SettingsState extends State<Settings> {
               },
             ),
             ListTile(
-              leading: Icon(Icons.manage_history),
-              title: Text('Manage my history'),
+              leading:
+                  Icon(Icons.manage_history, size: 30, color: Colors.white),
+              title: Text('Manage my history',
+                  style: TextStyle(color: Colors.white)),
               onTap: () => {
                 Navigator.pushReplacement(
                   context,
@@ -87,8 +92,9 @@ class _SettingsState extends State<Settings> {
               },
             ),
             ListTile(
-              leading: Icon(Icons.share),
-              title: Text('Share my metrics'),
+              leading: Icon(Icons.share, size: 30, color: Colors.white),
+              title: Text('Share my metrics',
+                  style: TextStyle(color: Colors.white)),
               onTap: () => {
                 Navigator.pushReplacement(
                   context,
